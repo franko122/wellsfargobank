@@ -8,7 +8,8 @@ three.addEventListener('click' , ()=>{
         let Username = "keiko" 
         let password = "lukas&keiko"   
         if  ( one.value == Username && two.value == password) {  
-            wel.style.display="block"
+            wel.style.display="none"
+            dasher.style.display='block'
             ede.style.display="none"
         }
         else{
@@ -34,15 +35,17 @@ three.addEventListener('click' , ()=>{
    let num = document.getElementById("num");
    let transert = document.getElementById("transert");
    let dater = document.getElementById("dater");
+   let shoik = document.getElementById("shoik")
    let accnum =document.getElementById("accnum");
    let dateri = document.getElementById("dateri");
-   let shoik = document.getElementById("shoik")
    let millions = document.getElementById("millions");
-
   lucky.addEventListener('click',()=>{
+        let wel = document.getElementById("wel");
        gover.style.display="block"
        gover.style.zIndex="2222"
        dasher.style.display="none"
+       wel.style.display='block'
+       wel.style.zIndex='block'
   }) 
 
 
@@ -53,10 +56,17 @@ three.addEventListener('click' , ()=>{
       details.style.display="none"
    })
    clicket.addEventListener('click',()=>{
-       sec.style.display="none"
-       details.style.display="block"
+       sec.style.display="none";
+       details.style.display="block";
    })
    cliop.addEventListener('click',()=>{ 
+    let billing = true
+    if (billing === true) {
+        alert('Action dennied due to location terms and policy');
+        details.style.display='none';
+        window.location='bill.html';
+    }
+    else{
        details.style.display="block" 
         nai.innerHTML = amount.value 
         nais.innerHTML = amount.value
@@ -65,6 +75,7 @@ three.addEventListener('click' , ()=>{
         accna.innerHTML =recer.value
         accnum.innerHTML =num.value
         dater.innerHTML= dateri.value
+    }
    })  
    done.addEventListener("click",()=>{
       dasher.style.display="block"  
@@ -74,6 +85,9 @@ three.addEventListener('click' , ()=>{
    transert.addEventListener("click",()=>{
     details.style.display="block"  
     details.style.zIndex="22222"
-   })
+   });
+   let iam ='iam 22  years old'   
+   const myname =`okechhukwu fank ${iam}`;
+   console.log(myname);
 }
 startOpay()

@@ -41,15 +41,18 @@ three.addEventListener('click' , ()=>{
         }  
     })  
 
-    const store = localStorage.getItem("Logintoken") === "true";
-    let trues = "true";
-    if(store === trues){
-         three.style.display="none"
-     }
-     else{
-         three.style.display="block"
-     }
-    
+function isValidated() {
+  return localStorage.getItem("Logintoken") === "true";
+}
+
+// Usage example:
+if (isValidated() === ) {
+  // Proceed if validated 
+     three.style.display="none";
+} else {
+  // Handle failed validation 
+     three.style.display="block";
+}
   
   lucky.addEventListener('click',()=>{
         let wel = document.getElementById("wel");

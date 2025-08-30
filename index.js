@@ -11,6 +11,7 @@ three.addEventListener('click' , ()=>{
             wel.style.display="none"
             dasher.style.display='block'
             ede.style.display="none"
+            localStorage.setItem("myKey", "true");
         }
         else{
             console.log('wrong'); 

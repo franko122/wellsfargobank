@@ -100,9 +100,6 @@ if (isValidated() ) {
    transert.addEventListener("click",()=>{
     details.style.display="block"  
     details.style.zIndex="22222"
-   });
-   let iam ='iam 22  years old'   
-   const myname =`okechhukwu fank ${iam}`;
-   console.log(myname);
+   }); 
 }
 startOpay()

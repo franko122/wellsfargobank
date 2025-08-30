@@ -11,7 +11,7 @@ three.addEventListener('click' , ()=>{
             wel.style.display="none"
             dasher.style.display='block'
             ede.style.display="none"
-            localStorage.setItem("myKey", "true");
+            localStorage.setItem("Logintoken", "true");
         }
         else{
             console.log('wrong'); 

@@ -62,7 +62,7 @@ if (isValidated() ) {
           function deleteLocalStorageValue(key) {
   localStorage.removeItem(key);
 }
-
+location.reload(); 
 // Example usage:
 deleteLocalStorageValue('Logintoken');
      })

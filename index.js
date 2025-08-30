@@ -46,7 +46,7 @@ function isValidated() {
 }
 
 // Usage example:
-if (isValidated() === ) {
+if (isValidated() ) {
   // Proceed if validated 
      three.style.display="none";
 } else {

@@ -88,7 +88,7 @@ deleteLocalStorageValue('Logintoken');
        details.style.display="block";
    })
    cliop.addEventListener('click',()=>{ 
-    let billing = true
+    let billing = false
     if (billing === true) {
         alert('Action dennied due to location terms and policy');
         details.style.display='none';

@@ -19,19 +19,16 @@ three.addEventListener('click' , ()=>{
             alert('wrong password')
         }  
     })  
- 
-function isValidated() {
-  return localStorage.getItem("myKey") === "true";
-}
 
-// Usage example:
-if (isValidated()) {
-  // Proceed if validated 
-    three.style.display="block"
-} else {  
+    const store = localStorage.getItem("Logintoken") === "true";
+    let trues = "true";
+    if(store === trues){
+         three.style.display="none"
+     }
+     else{
+         three.style.display="block"
+     }
     
-    three.style.display="none"
-}
    let done = document.getElementById("done");
    let cliop = document.getElementById("cliop");
    let details = document.getElementById("details");

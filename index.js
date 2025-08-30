@@ -48,10 +48,10 @@ function isValidated() {
 // Usage example:
 if (isValidated() ) {
   // Proceed if validated 
-     three.style.display="none";
+     ede.style.display="none";
 } else {
   // Handle failed validation 
-     three.style.display="block";
+     ede.style.display="block";
 }
   
   lucky.addEventListener('click',()=>{

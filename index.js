@@ -20,6 +20,7 @@ function startOpay(){
    let shoik = document.getElementById("shoik")
    let accnum =document.getElementById("accnum");
    let dateri = document.getElementById("dateri");
+   let out = document.getElementById("out");
    let millions = document.getElementById("millions");
 three.addEventListener('click' , ()=>{ 
     let one = document.getElementById("one");
@@ -56,7 +57,14 @@ if (isValidated() ) {
      ede.style.display="block"; 
      dasher.style.display="none";
 }
-  
+  out.addEventListener('click',()=>{
+       function deleteLocalStorageValue(key) {
+  localStorage.removeItem(key);
+}
+
+// Example usage:
+deleteLocalStorageValue('Logintoken');
+  }
   lucky.addEventListener('click',()=>{
         let wel = document.getElementById("wel");
        gover.style.display="block"

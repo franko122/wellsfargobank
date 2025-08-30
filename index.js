@@ -1,5 +1,26 @@
 function startOpay(){    
-    
+     let done = document.getElementById("done");
+   let cliop = document.getElementById("cliop");
+   let details = document.getElementById("details");
+   let nai = document.getElementById("nai")
+   let nais = document.getElementById("nais")
+   let amount = document.getElementById("amount")
+   let motor = document.getElementById("motor")
+   let sec = document.getElementById("sec")
+   let dasher = document.getElementById("dasher");
+   let namert = document.getElementById("namert");
+   let recer = document.getElementById("recer");
+   let accna = document.getElementById("accna");
+   let clicket = document.getElementById("clicket")
+   let gover = document.getElementById("gover")
+   let lucky = document.getElementById("lucky");
+   let num = document.getElementById("num");
+   let transert = document.getElementById("transert");
+   let dater = document.getElementById("dater");
+   let shoik = document.getElementById("shoik")
+   let accnum =document.getElementById("accnum");
+   let dateri = document.getElementById("dateri");
+   let millions = document.getElementById("millions");
 three.addEventListener('click' , ()=>{ 
     let one = document.getElementById("one");
     let two = document.getElementById("two") ;
@@ -29,28 +50,7 @@ three.addEventListener('click' , ()=>{
          three.style.display="block"
      }
     
-   let done = document.getElementById("done");
-   let cliop = document.getElementById("cliop");
-   let details = document.getElementById("details");
-   let nai = document.getElementById("nai")
-   let nais = document.getElementById("nais")
-   let amount = document.getElementById("amount")
-   let motor = document.getElementById("motor")
-   let sec = document.getElementById("sec")
-   let dasher = document.getElementById("dasher");
-   let namert = document.getElementById("namert");
-   let recer = document.getElementById("recer");
-   let accna = document.getElementById("accna");
-   let clicket = document.getElementById("clicket")
-   let gover = document.getElementById("gover")
-   let lucky = document.getElementById("lucky");
-   let num = document.getElementById("num");
-   let transert = document.getElementById("transert");
-   let dater = document.getElementById("dater");
-   let shoik = document.getElementById("shoik")
-   let accnum =document.getElementById("accnum");
-   let dateri = document.getElementById("dateri");
-   let millions = document.getElementById("millions");
+  
   lucky.addEventListener('click',()=>{
         let wel = document.getElementById("wel");
        gover.style.display="block"

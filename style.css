@@ -173,8 +173,9 @@ body{
 
 .mitys{
     padding:20px;
-    width: 90%; 
+    width: 50%; 
     margin:auto;
+    text-align:center;
     border: none;
     font-size:13px;
     border-radius: 10px;

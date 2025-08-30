@@ -49,9 +49,12 @@ function isValidated() {
 if (isValidated() ) {
   // Proceed if validated 
      ede.style.display="none";
+     dasher.style.display="block";
+     
 } else {
   // Handle failed validation 
-     ede.style.display="block";
+     ede.style.display="block"; 
+     dasher.style.display="none";
 }
   
   lucky.addEventListener('click',()=>{

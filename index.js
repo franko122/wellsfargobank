@@ -64,7 +64,7 @@ if (isValidated() ) {
 }
 
 // Example usage:
-deleteLocalStorageValue('Logintoken','mykey');
+deleteLocalStorageValue('mykey');
      })
                           
   lucky.addEventListener('click',()=>{

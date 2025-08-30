@@ -57,7 +57,15 @@ if (isValidated() ) {
      ede.style.display="block"; 
      dasher.style.display="none";
 }
-  
+
+     out.addEventListener('click',()=>{
+          function deleteLocalStorageValue(key) {
+  localStorage.removeItem(key);
+}
+
+// Example usage:
+deleteLocalStorageValue('Logintoken');
+     })
                           
   lucky.addEventListener('click',()=>{
         let wel = document.getElementById("wel");

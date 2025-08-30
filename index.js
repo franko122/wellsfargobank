@@ -1,4 +1,5 @@
 function startOpay(){    
+    
 three.addEventListener('click' , ()=>{ 
     let one = document.getElementById("one");
     let two = document.getElementById("two") ;
@@ -18,6 +19,19 @@ three.addEventListener('click' , ()=>{
             alert('wrong password')
         }  
     })  
+ 
+function isValidated() {
+  return localStorage.getItem("myKey") === "true";
+}
+
+// Usage example:
+if (isValidated()) {
+  // Proceed if validated 
+    three.style.display="block"
+} else {  
+    
+    three.style.display="none"
+}
    let done = document.getElementById("done");
    let cliop = document.getElementById("cliop");
    let details = document.getElementById("details");

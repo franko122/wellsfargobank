@@ -23,7 +23,7 @@ function startOpay(){
    let dateri = document.getElementById("dateri");
    let out = document.getElementById("out");
    let millions = document.getElementById("millions");
-     
+     console.log(doll)
 three.addEventListener('click' , ()=>{ 
     let one = document.getElementById("one");
     let two = document.getElementById("two") ;

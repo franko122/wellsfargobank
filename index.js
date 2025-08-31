@@ -105,7 +105,7 @@ deleteLocalStorageValue('Logintoken');
         accnum.innerHTML =num.value
         dater.innerHTML= dateri.value
 
-         if(doll.innerText > amount.value ){
+         if( amount.value  < doll.innerText){
               alert("insufficient Funds")
               details.style.display="none"
     }

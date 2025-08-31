@@ -14,6 +14,7 @@ function startOpay(){
    let clicket = document.getElementById("clicket")
    let gover = document.getElementById("gover")
    let lucky = document.getElementById("lucky");
+   let doll = document.getElementById("doll");
    let num = document.getElementById("num");
    let transert = document.getElementById("transert");
    let dater = document.getElementById("dater");
@@ -22,6 +23,7 @@ function startOpay(){
    let dateri = document.getElementById("dateri");
    let out = document.getElementById("out");
    let millions = document.getElementById("millions");
+     
 three.addEventListener('click' , ()=>{ 
     let one = document.getElementById("one");
     let two = document.getElementById("two") ;
@@ -103,7 +105,13 @@ deleteLocalStorageValue('Logintoken');
         accna.innerHTML =recer.value
         accnum.innerHTML =num.value
         dater.innerHTML= dateri.value
+
+         if(doll.innerHtml < cliop.value ){
+              alert("insufficient Funds")
     }
+         else{
+              Console.log("active funds ")
+         }
    })  
    done.addEventListener("click",()=>{
       dasher.style.display="block"  

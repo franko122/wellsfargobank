@@ -106,12 +106,13 @@ deleteLocalStorageValue('Logintoken');
         accnum.innerHTML =num.value
         dater.innerHTML= dateri.value
 
-         if(doll.innerHtml < cliop.value ){
+         if(doll.innerText < cliop.value ){
               alert("insufficient Funds")
     }
          else{
               Console.log("active funds ")
          }
+    }
    })  
    done.addEventListener("click",()=>{
       dasher.style.display="block"  

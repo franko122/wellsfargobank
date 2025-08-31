@@ -110,7 +110,7 @@ deleteLocalStorageValue('Logintoken');
               details.style.display="none"
     }
          else{
-              Console.log("active funds ")
+              console.log("active funds ")
          }
     }
    })  

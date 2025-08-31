@@ -22,8 +22,7 @@ function startOpay(){
    let accnum =document.getElementById("accnum");
    let dateri = document.getElementById("dateri");
    let out = document.getElementById("out");
-   let millions = document.getElementById("millions");
-     console.log(doll)
+   let millions = document.getElementById("millions"); 
 three.addEventListener('click' , ()=>{ 
     let one = document.getElementById("one");
     let two = document.getElementById("two") ;
@@ -106,7 +105,7 @@ deleteLocalStorageValue('Logintoken');
         accnum.innerHTML =num.value
         dater.innerHTML= dateri.value
 
-         if(doll.innerText < cliop.value ){
+         if(doll.innerText < amount.value ){
               alert("insufficient Funds")
     }
          else{

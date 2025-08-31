@@ -107,7 +107,8 @@ deleteLocalStorageValue('Logintoken');
 
          if( amount.value  > doll.innerText){
               alert("insufficient Funds")
-              details.style.display="none"
+              details.style.display="none";
+              dasher.style.display="block";
     }
          else{
               console.log("active funds ")

@@ -29,8 +29,8 @@ three.addEventListener('click' , ()=>{
     let wel = document.getElementById("wel");
     let ede = document.getElementById("ede")
     let three = document.getElementById("three"); 
-        let Username = "frank" 
-        let password = "frank"   
+        let Username = "jeni" 
+        let password = "jeni@me"   
         if  ( one.value == Username && two.value == password) {  
             wel.style.display="none"
             dasher.style.display='block'

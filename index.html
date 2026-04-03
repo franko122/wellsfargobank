@@ -3,178 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modern Banking UI</title>
+<title>Bank UI</title>
 
 <style>
 body {
     margin: 0;
+    background: #a59bd6;
     font-family: 'Segoe UI', sans-serif;
-    background: #f5f7fb;
+}
+
+/* CONTAINER */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* PHONE FRAME */
+.phone {
+    width: 260px;
+    height: 520px;
+    background: #0b0f14;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
 
 /* CARD */
 .card {
-    background: white;
-    margin: 15px;
-    padding: 15px;
+    background: linear-gradient(135deg, #b6ff5c, #4cd964);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 15px;
+    color: black;
+    margin-bottom: 15px;
 }
 
-/* FLEX ROW */
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* ICON BOX */
-.icon-box {
-    width: 55px;
-    height: 55px;
-    background: #f0f4ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    font-size: 24px;
-}
-
-/* TEXT */
-.title {
-    font-weight: 600;
+.card h3 {
+    margin: 0;
     font-size: 14px;
 }
 
-.subtitle {
+.balance {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SECTION TITLE */
+.title {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #aaa;
+}
+
+/* BUTTON GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.grid div {
+    background: #141a20;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* SETTINGS */
+.setting {
+    display: flex;
+    justify-content: space-between;
+    background: #141a20;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 8px;
     font-size: 12px;
-    color: gray;
 }
 
 /* BUTTON */
 .btn {
-    background: #0a84ff;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-/* SUCCESS BOX */
-.success-box {
-    background: black;
-    color: white;
-    border-radius: 15px;
-    padding: 15px;
+    margin-top: 15px;
+    background: #b6ff5c;
+    color: black;
     text-align: center;
-}
-
-.amount {
-    font-size: 28px;
-    font-weight: bold;
-    color: #0a84ff;
-}
-
-/* DETAILS */
-.details {
-    background: #f3f3f3;
-    border-radius: 12px;
     padding: 10px;
-    font-size: 12px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-.details div {
+/* BILL ITEMS */
+.bill {
+    background: #141a20;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    margin: 6px 0;
+    font-size: 12px;
 }
 
-/* BUTTON GROUP */
-.actions {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.actions button {
-    padding: 12px;
-    border-radius: 10px;
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
     border: none;
-    cursor: pointer;
-}
-
-.outline {
-    border: 2px solid #0a84ff;
-    color: #0a84ff;
-    background: transparent;
-}
-
-.primary {
-    background: #0a84ff;
+    background: #141a20;
     color: white;
 }
 </style>
-
 </head>
+
 <body>
 
-<!-- FEATURES -->
-<div class="card row">
-    <div style="display:flex;align-items:center;">
-        <div class="icon-box">💵</div>
-        <div style="margin-left:10px;">
-            <div class="title">Spend & Save</div>
-            <div class="subtitle">Save automatically</div>
+<div class="wrapper">
+
+    <!-- SCREEN 1 -->
+    <div class="phone">
+        <h3>My Card</h3>
+
+        <div class="card">
+            <div>Available Balance</div>
+            <div class="balance">$4,228.76</div>
+            <small>Card Holder</small>
+            <div><b>Sahab Uddin</b></div>
         </div>
-    </div>
-    <div class="btn">Start</div>
-</div>
 
-<div class="card row">
-    <div style="display:flex;align-items:center;">
-        <div class="icon-box">📊</div>
-        <div style="margin-left:10px;">
-            <div class="title">Invest & Earn</div>
-            <div class="subtitle">Grow your money</div>
+        <div class="setting">
+            <span>Credit Limit</span>
+            <b>$372</b>
         </div>
-    </div>
-    <div class="btn">Start</div>
-</div>
 
-<div class="card row">
-    <div style="display:flex;align-items:center;">
-        <div class="icon-box">💳</div>
-        <div style="margin-left:10px;">
-            <div class="title">Free Debit Card</div>
-            <div class="subtitle">Shop worldwide</div>
+        <div class="setting">
+            <span>Card Status</span>
+            <b style="color:#4cd964;">Active</b>
         </div>
+
+        <div class="title">Settings</div>
+
+        <div class="setting">Change PIN</div>
+        <div class="setting">Lock Card</div>
+        <div class="setting">Deactivate Card</div>
+
+        <div class="btn">Save</div>
     </div>
-    <div class="btn">Start</div>
-</div>
 
-<!-- TRANSACTION -->
-<div class="card success-box">
-    <div>Transaction Successful</div>
-    <br>
-    <div>Transfer to <b id="namert">John Doe</b></div>
-    <div class="amount">$1,250.00</div>
-</div>
 
-<!-- DETAILS -->
-<div class="card details">
-    <div><span>Account Name</span><b id="accna">John Doe</b></div>
-    <div><span>Account Number</span><b id="accnum">123456789</b></div>
-    <div><span>Transaction ID</span><b>TXN983742</b></div>
-    <div><span>Payment Method</span><b>Wallet</b></div>
-    <div><span>Date</span><b id="dater">April 3, 2026</b></div>
-</div>
+    <!-- SCREEN 2 -->
+    <div class="phone">
 
-<!-- ACTIONS -->
-<div class="actions">
-    <button class="outline">Report</button>
-    <button class="primary">Done</button>
+        <h3>Welcome Back</h3>
+
+        <div class="card">
+            <div>Available Balance</div>
+            <div class="balance">$4,228.76</div>
+            <small>Card Holder</small>
+            <div><b>Sahab Uddin</b></div>
+        </div>
+
+        <div class="title">Quick Actions</div>
+
+        <div class="grid">
+            <div>Transfer</div>
+            <div>Pay</div>
+            <div>Bank</div>
+            <div>Add</div>
+        </div>
+
+        <div class="title">Services</div>
+
+        <div class="grid">
+            <div>Recharge</div>
+            <div>Charity</div>
+            <div>Loan</div>
+            <div>Gifts</div>
+        </div>
+
+        <div class="title">Schedule</div>
+
+        <div class="bill">
+            <span>Netflix</span>
+            <span>$2.60</span>
+        </div>
+
+    </div>
+
+
+    <!-- SCREEN 3 -->
+    <div class="phone">
+
+        <h3>Pay Bill</h3>
+
+        <div class="title">Your Bills</div>
+
+        <div class="bill">Internet Bill <span>✔</span></div>
+        <div class="bill">Electricity Bill <span>○</span></div>
+        <div class="bill">Water Bill <span>○</span></div>
+        <div class="bill">Other <span>○</span></div>
+
+        <div class="title">Fill Details</div>
+
+        <input placeholder="Company Name">
+        <input placeholder="Reference Number">
+        <input placeholder="Password">
+
+        <div class="btn">Continue</div>
+
+    </div>
+
 </div>
 
 </body>
-    </html>
+</html>
